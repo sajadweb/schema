@@ -7,6 +7,8 @@
   "license": "MIT",
   "homepage": "https://github.com/sajadweb/schema#readme",
   "scripts": {
+    "install": "npm run build",
+    "prepare": "npm run build",
     "prebuild": "rimraf dist",
     "build": "tsc -p tsconfig.json",
     "format": "prettier --write \"**/*.ts\"",
