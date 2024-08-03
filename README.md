@@ -84,7 +84,7 @@ export class EmailService {
 }
 ```
 
-## Requirements & Install
+## Requirements
 ```json
 {
    "peerDependencies": {
@@ -95,7 +95,12 @@ export class EmailService {
    }
 }
 ```
- 
+## Install
+ ```sh
+  npm install git+ssh://git@github.com:sajadweb/schema.git#v10.0.10
+  npm install git+https://isaacs@github.com/sajadweb/schema.git
+  npm install git://github.com/sajadweb/schema.git#v10.0.10
+ ```
 ## Author
 
 - [Sajjad Mohammadi](https://sajadweb.ir)

@@ -1,6 +1,6 @@
 {
   "name": "@sajadweb/schema",
-  "version": "1.0.1",
+  "version": "10.0.10",
   "description": "schema",
   "main": "dist/index.js",
   "author": "Sajjad Mohammadi <sajadweb7@gmail.com> (https://sajadweb.ir)",
