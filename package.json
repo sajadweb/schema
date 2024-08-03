@@ -1,13 +1,12 @@
 {
   "name": "@sajadweb/schema",
-  "version": "10.0.10",
+  "version": "10.3.1",
   "description": "schema",
   "main": "dist/index.js",
   "author": "Sajjad Mohammadi <sajadweb7@gmail.com> (https://sajadweb.ir)",
   "license": "MIT",
   "homepage": "https://github.com/sajadweb/schema#readme",
   "scripts": {
-    "install": "npm run build",
     "prepare": "npm run build",
     "prebuild": "rimraf dist",
     "build": "tsc -p tsconfig.json",
@@ -15,7 +14,7 @@
     "lint": "eslint 'lib/**/*.ts' --fix",
     "prepublish:npm": "npm run build",
     "publish:npm": "npm publish --access public",
-    "test:e2e": "jest --config ./tests/jest-e2e.json --runInBand",
+    "test": "jest --config ./tests/jest-e2e.json --runInBand",
     "test:e2e:dev": "jest --config ./tests/jest-e2e.json --runInBand --watchAll",
     "release": "release-it"
   },
@@ -27,9 +26,9 @@
     "url": "git+https://github.com/sajadweb/schema.git"
   },
   "peerDependencies": {
-    "@nestjs/common": "^10.0.10",
+    "@nestjs/common": "^10.3.10",
     "@nestjs/config": "^3.2.3",
-    "@nestjs/core": "^10.0.10",
+    "@nestjs/core": "^10.3.10",
     "@nestjs/mongoose": "^10.0.10",
     "mongoose": "^8.5.1",
     "reflect-metadata": "^0.2.2",
@@ -37,8 +36,7 @@
   },
   "devDependencies": {
     "@commitlint/cli": "19.3.0",
-    "@commitlint/config-angular": "19.3.0",
-    "@types/crypto-js": "^4.2.2",
+    "@commitlint/config-angular": "19.3.0", 
     "@types/jest": "29.5.12",
     "@types/mongoose": "^5.11.97",
     "@types/node": "20.14.12",
